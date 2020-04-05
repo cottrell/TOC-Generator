@@ -1,6 +1,18 @@
 # TOC-Generator
 A table of contents generator for markdown, written in python.  Inspired by many of the table-of-contents generators that already exist, particularly [markdown-toc](https://github.com/jonschlinkert/markdown-toc).
 
+```bash
+$ python tocgen.py -h
+usage: tocgen.py [-h] [-i] paths [paths ...]
+
+positional arguments:
+  paths          list of .md files or paths where .md are located.
+
+optional arguments:
+  -h, --help     show this help message and exit
+  -i, --inplace  False
+```
+
 # Premise
 I maintain a [github project](https://github.com/Chris3606/GoRogue) that has a wiki, and needed a lightweight method to automatically generate tables of contents for select pages.  I wanted to automatically insert and update those tables of contents with minimal effort.  Thus, I created a python script to accomplish this.
 
