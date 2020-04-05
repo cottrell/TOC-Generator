@@ -14,7 +14,9 @@ def is_markdown_file(file_path):
 def get_filenames(path, selector_lambda=None):
     # By default we select everything
     if selector_lambda == None:
-        def selector_lambda(path): return True
+
+        def selector_lambda(path):
+            return True
 
     files = []
     for root, directories, filenames in os.walk(path):
